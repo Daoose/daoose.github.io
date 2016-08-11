@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+      <ul class="nav navbar-nav">
+          <a class="navbar-brand" href="#">
+          <img alt="Vesta" class="top-image" src="http://i.imgur.com/IkMka3C.png">
+        </a>            
+        <li class="active"><a href="#">VESTA STORE</a></li>
+        <li><a href="#">VESTA TRADE</a></li>
+        <li><a href="#">CUSTOMER WEBSITES</a></li>
+        <li><a href="#">POS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      </div>
+      </div>    
+ </nav>  

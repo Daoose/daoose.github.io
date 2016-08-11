@@ -1,0 +1,227 @@
+html,body {
+  height:100%;
+  margin:0;
+  background-color: #222222;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.darknav {
+    background-color: #222222;
+    border: 0px;
+    height: 140px;
+}
+
+.content {
+  height:100%;
+  min-height:100%;
+}
+
+html>body .content {
+  height:auto;
+}
+
+img#brand {
+    #height: 45px;
+    #padding-left: 0px;
+    #padding-top: 1.6%;
+    #float: left;
+    #width: 108px !important;
+}
+
+.navbar-brand {
+    padding: 35px 0px;
+}
+
+.navbar-nav {
+    margin-left: 80px;
+    margin-top: 40px;
+    font-size: 18px;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    position: absolute;
+    #margin: 0;
+    #padding: 0;
+    padding-top: 20px;
+    overflow: hidden;
+    #margin-top: 100px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.textbox {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+  color: rgba(0,0,0,1);
+  padding-top: 15%;
+}
+
+.pagetop {
+    #background-color: #222222;
+    #color: #222222;
+}
+
+.content {
+    width:100%; height :100%;
+}
+
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.smallertext
+{
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.biggertext
+{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.page1box {
+    width: 25%; 
+    height: 300px; 
+    float: left; 
+}
+
+.page2box {
+    width: 50%; 
+    height: 300px; 
+    float: left; 
+}
+
+.button {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    width: 60%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    vertical-align: middle;
+    font-size: 1.2vw;
+    margin: auto;
+    #margin-top: 40%;
+    display: block;
+}
+
+.textabovebutton
+{
+    border-style: none;
+    width: 60%;
+    #height: 10%;
+    color: white;
+    text-align: center;
+    #padding-top: -200px;
+    #vertical-align: middle;
+    font-size: 1.2vw;
+    margin: auto;
+    margin-top: 40%;
+    display: block;
+}
+
+.page1box#one {
+  background: url(http://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;  
+  background-size: cover;
+}
+.page1box#two {
+  background: url(http://i.imgur.com/e5hof8r.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+}
+.page1box#three {
+  background: url(http://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+}
+.page1box#four {
+  background: url(http://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+}
+
+.page1box:hover { 
+    border-style: solid;
+    border-color: white;
+}
+
+.page1central {
+    width:100%; 
+    height:200px;
+    background: url(http://i.imgur.com/rNfd2Wd.jpg) no-repeat center fixed;
+    background-size: cover;
+    #position: relative;
+}
+
+.page2central {
+    width:100%; 
+    height:200px;
+    background: url(http://i.imgur.com/0l81YvP.jpg) no-repeat center fixed;
+    background-size: cover;
+    #position: relative;
+}
+
+.page2bottom {
+    background-color: white;
+    height: 500px;    
+}
+
+.opaquebox {
+  height:100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.col-md-6#right {
+  background: url(http://i.imgur.com/LQKlLBn.png) center center no-repeat scroll;  
+  background-size: contain;    
+}
+
+.col-md-6#left {
+  background: url(http://i.imgur.com/V5sk0za.png) center center no-repeat scroll;
+  background-size: contain;    
+}
+
+.page1bottom {
+    width:100%; 
+    height:34%;
+    vertical-align: bottom;
+}
+
+
+.content#two {
+  background: url(http://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;
+}
+
+.content#three {
+  background: url(http://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;
+}
+
+.content#four {
+  background: url(http://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;
+}
