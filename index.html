@@ -13,63 +13,65 @@
 
 <script>
 
-function ResizePage() {
-    $('.page1box').css("height",$('.page1box').width());
-    $('.page1central').css("height",$(window).height()-$('.page1box').width()-$('.page1top').height());
-    $('.page2central').css("height",$(window).height()/2);
-    $('.page2bottom').css("height",$(window).height()/2);    
-}
+//function ResizePage() {
+    //$('.page1box').css("height",$('.page1box').width());
+    //$('.page1central').css("height",$(window).height()-$('.page1box').width()-$('.page1top').height());
+    //$('.page2central').css("height",$(window).height()/2);
+    //$('.page2bottom').css("height",$(window).height()/2);    
+//}
     
 
-$(window).on('resize', function(){
-    ResizePage();
-});
+//$(window).on('resize', function(){
+//    ResizePage();
+//});
 
 $(document).ready(function(){
-    ResizePage();
-    $(".page1box#one").click(function() {
+    //ResizePage();
+    $(".content#one").click(function() {
         $('html, body').animate({scrollTop: $(".content#two").offset().top}, 1000);
 });
+   $(".page1box#one").click(function() {
+        $('html, body').animate({scrollTop: $(".content#three").offset().top}, 1000);
+}); 
     
 });
 </script>
-
-<div class="container-fluid content">
-    <div class="row pagetop">
-        <div class="col-md-11 col-md-offset-1 page1top">
-            <nav class="navbar navbar-default darknav navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><img id='brand' src='https://i.imgur.com/Uwo5nBe.png' /></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">VESTA STORE<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">VESTA TRADE</a></li>
-                            <li><a href="#">CUSTOM WEBSITES</a></li>
-                            <li><a href="#">POS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-      </div>
-  </div>
-  <div class="row page1central" id="one">
-      <div class="col-md-7 col-md-offset-1 opaquebox">
-          <div class="textbox">
-            <span class="smallertext">eCommerce and Software Solutions<br></span>
-            <span class="biggertext">BY THE INDUSTRY,<br/>FOR THE INDUSTRY</span>
-          </div>
-      </div>
-  </div>
-  <div class="row page1bottom">
+    
+<nav class="navbar navbar-default darknav navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id='brand' src='https://i.imgur.com/Uwo5nBe.png' /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">VESTA STORE<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">VESTA TRADE</a></li>
+                <li><a href="#">CUSTOM WEBSITES</a></li>
+                <li><a href="#">POS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<div class="container-fluid content page1central" id="one">  
+    <div class="row" id="one">
+        <div class="col-md-6 col-md-offset-1 opaquebox">
+            <div class="textbox">
+              <span class="smallertext">eCommerce and Software Solutions<br></span>
+              <span class="biggertext">BY THE INDUSTRY,<br/>FOR THE INDUSTRY</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid content page2central" id="two">  
+    <div class="row" id="two">
       <div class="col-md-2 page1box" id="one">
           <div class="textabovebutton">VESTA STORE</div>
           <div class="button">View website</div>
@@ -77,23 +79,31 @@ $(document).ready(function(){
       <div class="col-md-2 page1box" id="two"></div>
       <div class="col-md-2 page1box" id="three"></div>
       <div class="col-md-2 page1box" id="four"></div>
-  </div>
-</div>
 
-<div class="container-fluid content" id="two">
-  <div class="row page2central">
+    </div>
+</div>
+<div class="container-fluid content page3central" id="three">  
+  <div class="row" id="three">
       <div class="col-md-6 col-md-offset-1 opaquebox">
           <div class="textbox">
             <span class="smallertext">A single step eCommerce solution. Compete with the best for a fraction of the cost!<br></span>
             <span class="biggertext">Vesta Store</span>
           </div>
       </div>
-      </div>
+  </div>
+</div>    
+<!--
+  <div class="row page1bottom">
+  </div>
+</div>
+
+<div class="container-fluid content" id="two">
   <div class="row page2bottom">
       <div class="col-md-6 page2box" id="left"></div>
       <div class="col-md-6 page2box" id="right"></div>
   </div>
 </div>
+-->
 
 </body>
 </html>
