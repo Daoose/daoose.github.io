@@ -1,84 +1,407 @@
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('fonts/Avenir-Book.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('fonts/Avenir-Black.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('fonts/Avenir-Heavy.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('fonts/Avenir-Medium.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('fonts/SourceSansPro-Bold.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('fonts/SourceSansPro-Regular.ttf')  format('truetype')
+}
+
 html,body {
   height:100%;
   margin:0;
-  background-color: #222222;
+  background-color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
-
-.darknav {
+header {
     background-color: #222222;
     border: 0px;
-    height: 140px;
+    height: 160px;
+    padding-top: 53px;
+}
+.navbar-nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.navbar-nav li a.active {
+    background-color: #eee;
+    color: #111;   
+}
+.navbar-nav li a:hover {
+    color: #111;
+}
+.navbar-default {
+    background-color: #222;
+    border: none;
+}
+.page1central {
+    width:100%; 
+    min-height: calc(100vh - 160px);
+    background: url(https://i.imgur.com/rNfd2Wd.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.page2central {
+    width:100%; 
+    min-height: 100vh;
+    background: url(https://i.imgur.com/4bdi5ZT.jpg) no-repeat center fixed;
+    background-size: cover;    
+}
+.page3central {
+    width:100%; 
+    min-height: 100vh;
+}
+.height100vh {
+    height: 100vh;
+    min-height: 100vh;    
 }
 
-.content {
-  height:100%;
-  min-height:100%;
+.page1central .opaquebox {
+    height: calc(100vh - 160px);
+    background-color: rgba(255,255,255,0.5);
 }
+ .page2central .opaquebox {
+    height: 100vh;
+    background-color: rgba(255,255,255,0.5);
+}
+.textblock {
+    color: #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 36px;
+}
+.ultextblock {
+    color: #000;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    font-family: 'SourceSansPro-Bold';
+    font-size: 25px;
+}
+.ultextblock div {
+    height: 100px;
+}
+.ultextblock div:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.ultextblock > div > p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ultextblock1:before{
+    content: url(images/section3-icon1.png);
+    float: left;
+    margin-right: 38px;
+    padding-top: 12px;
+}
+.ultextblock2:before{
+    content: url(images/section3-icon2.png);
+    float: left;
+    margin-right: 38px; 
+    padding-top: 24px;       
+}
+.ultextblock3:before{
+    content: url(images/section3-icon3.png);
+    float: left;
+    margin-right: 38px;
+    padding-top: 16px;       
+}
+.ultextblock4:before{
+    content: url(images/section3-icon4.png);
+    float: left;
+    margin-right: 38px; 
+    padding-top: 18px;       
+}
+.imgblock {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);  
+}
+.page1central .smallertext {
+    font-family: 'Avenir-Heavy';
+    font-size: 39px;
+    line-height: 60px;
+}
+.page1central .biggertext {
+    font-family: 'Avenir-Black';
+    text-transform: uppercase;
+    font-size: 66px;
+    line-height: 78px;
+}
+.page2central .smallertext {
+    font-family: 'Avenir-Heavy';
+    font-size: 39px;
+    line-height: 48px;
+}
+.page2central .biggertext {
+    font-family: 'Avenir-Black';
+    font-size: 66px;
+    line-height: 96px;
+}
+.page1box {
+    display: inline;
+}
+.page2central, .page3central, .page5central {
+    width:100%; 
+    min-height: 100vh;
+}
+.page4central, .page6central, .page8central {
+    width:100%; 
+    min-height: 100vh; 
+    background-color: #222222;      
+}
+.page7central {
+    width:100%; 
+    min-height: 100vh; 
+    background-color: #fff; 
+    color: #000;      
+}
+.page1box {
+    width:25%; 
+    min-height: 100vh;    
+}
+.page4central .video {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.page5centraltext {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);        
+}
+.page4central h2 {
+    color: white;
+    text-align: center;
+    font-size: 31px;
+    font-family: 'Avenir-Black';   
+    margin-bottom: 40px;
+    margin-top: 0;     
+}
+.page5centraltext p {
+    margin: 0;
+}
+.page6centraltitle {
+    color: white;
+    text-align: center;
+    font-size: 31px;
+    font-family: 'Avenir-Black'; 
+    height: 100px;
+}
+.page6centraltitle h2{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   
+    font-size: 41px;    
+}
+.page6centraltextblock {
+    height: calc(100vh - 100px);
+}
+.page8centraltextblock {
+    height: 100vh;
+}
+.page6centraltext h3, .page8centraltext h3 {
+    font-size: 36px;
+    font-family: 'Avenir-Heavy';  
+    line-height: 57px;       
+}
+.page6centraltext p, .page8centraltext p {
+    font-size: 23px;
+    font-family: 'Avenir-Book'; 
+    line-height: 22px;        
+}
+.page6centraltext, .page8centraltext {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);  
+    color: #fff;  
+    text-align: center;  
+}
+.button2 {
+    width: 44%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 80px;
+    margin: auto;
+    display: block;
+    font-family: 'Avenir-Black';
+    background-color: #003D6A;
+    margin-top: 35px;
+}
+.button2:hover {
+    text-decoration: none;
+    color: white;    
+    background-color: #004772;
+}
+.page7centraltextblock {
+    height: 100vh;
+}
+.page7centraltext h3 {
+    font-size: 36px;
+    font-family: 'Avenir-Heavy';  
+    line-height: 57px;       
+}
+.page7centraltext p {
+    font-size: 23px;
+    font-family: 'Avenir-Book'; 
+    line-height: 22px;        
+}
+.page7centraltext {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   
+    text-align: center;  
+}
+.button3 {
+    width: 44%;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    line-height: 80px;
+    margin: auto;
+    display: block;
+    font-family: 'Avenir-Black';
+    background-color: #fff;
+    margin-top: 35px;
+}
+.button3:hover {
+    text-decoration: none;
+    color: #000;    
+    background-color: #ddd;
+}
+.text1style {
+    color: #000;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 25px;
+}
+.text2style {
+    color: #000;
+    font-family: 'SourceSansPro-Bold';
+    font-size: 25px;    
+}
+.text3style {
+    color: #000;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 20px;      
+}
+div.page2hoverblock {
+    background-color: rgba(0,0,255,0.25);   
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    width: 100%;
+    height: 100vh;
+}
+
+
+div.page1box:hover div.page2hoverblock {
+    visibility: visible;
+    opacity: 1;
+}
+.nopadding {
+   padding: 0 !important;
+}
+.nomargin {
+   margin: 0 !important;
+}
+
+.block1 {
+  background: url(https://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;  
+  background-size: cover;
+  height: 100%; 
+}
+.block2 {
+  background: url(https://i.imgur.com/e5hof8r.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+  height: 100%; 
+}
+.block3 {
+  background: url(https://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+}
+.block4 {
+  background: url(https://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;  
+  background-size: cover;    
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.button {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    line-height: 45px;
+    margin: auto;
+    display: block;
+    font-family: 'Avenir-Medium';
+}
+.button:hover {
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.5);
+    color:#111;
+}
+
+.textabovebutton
+{
+    border-style: none;
+    color: white;
+    text-align: center;
+    font-size: 31px;
+    margin: auto;
+    display: block;
+    font-family: 'Avenir-Black';    
+}
+
+@media (max-width:768px) {
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
 
 html>body .content {
   height:auto;
 }
 
-img#brand {
-    #height: 45px;
-    #padding-left: 0px;
-    #padding-top: 1.6%;
-    #float: left;
-    #width: 108px !important;
-}
 
-.navbar {
-    padding: 0px 90px;
-    
-}
-
-.navbar-brand {
-    padding: 35px 0px;
-}
-
-.navbar-nav {
-    margin-left: 80px;
-    margin-top: 40px;
-    font-size: 18px;
-    
-}
-
-ul {
-    list-style-type: none;
-    display: inline;
-    position: absolute;
-    #margin: 0;
-    #padding: 0;
-    padding-top: 20px;
-    overflow: hidden;
-    #margin-top: 100px;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-}
-
-.textbox {
-    margin-top: 10vw;
-    margin-left: 2vw;
-    width: 90%;
-    height: 80%;
-  color: rgba(0,0,0,1);
-  padding-top: 15%;
-}
 
 .pagetop {
     #background-color: #222222;
@@ -95,33 +418,7 @@ li a:hover {
     padding-left: 0px;
 }
 
-.smallertext
-{
-    font-size: 2.5vw;
-    font-weight: 600;
-}
 
-.biggertext
-{
-    font-size: 4vw;
-    font-weight: 600;
-}
-
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.page1box {
-    width: 25%; 
-    height: 100%;
-    float: left;
-    display: inline;
-   
-}
 
 .page2box {
     width: 50%; 
@@ -129,87 +426,15 @@ li a:hover {
     float: left; 
 }
 
-.button {
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    width: 60%;
-    #height: %;
-    color: white;
-    text-align: center;
-    #padding-top: 1%;
-    vertical-align: middle;
-    font-size: 1.2vw;
-    margin: auto;
-    #margin-top: 40%;
-    display: block;
-}
 
-.textabovebutton
-{
-    border-style: none;
-    width: 60%;
-    #height: 10%;
-    color: white;
-    text-align: center;
-    #padding-top: -200px;
-    #vertical-align: middle;
-    font-size: 1.2vw;
-    margin: auto;
-    margin-top: 100%;
-    display: block;
-}
 
-.page1box#one {
-  background: url(https://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;  
-  background-size: cover;
-  height: 100%; 
-}
-.page1box#two {
-  background: url(https://i.imgur.com/e5hof8r.jpg) center center no-repeat scroll;  
-  background-size: cover;    
-  height: 100%; 
-}
-.page1box#three {
-  background: url(https://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;  
-  background-size: cover;    
-}
-.page1box#four {
-  background: url(https://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;  
-  background-size: cover;    
-}
-
-.page1box:hover { 
-    border-style: solid;
-    border-color: white;
-}
-
-.page1central {
-    width:100%; 
-    #height:200px;
-    background: url(https://i.imgur.com/rNfd2Wd.jpg) no-repeat center fixed;
-    background-size: cover;
-    #position: relative;
-}
-
-.page2central {
-    width:100%; 
-    height:200px;
-    background: url(https://i.imgur.com/0l81YvP.jpg) no-repeat center fixed;
-    background-size: cover;
-    #position: relative;
-}
 
 .page2bottom {
     background-color: white;
     height: 500px;    
 }
 
-.opaquebox {
-  height:100%;
-  background-color: rgba(255,255,255,0.5);
-  #position:absolute;
-}
+
 
 .col-md-6#right {
   background: url(https://i.imgur.com/LQKlLBn.png) center center no-repeat scroll;  
@@ -230,10 +455,6 @@ li a:hover {
 
 .content#two {
   #background: url(https://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;
-}
-
-.content#three {
-  background: url(https://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;
 }
 
 .content#four {
