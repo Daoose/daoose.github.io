@@ -104,7 +104,7 @@ header {
 .page2central {
     width:100%; 
     min-height: 100vh;
-    background: url(https://i.imgur.com/4bdi5ZT.jpg) no-repeat center;
+    background: url('/content/Joes Hardware all devices.jpg') no-repeat center;
     background-size: cover;    
 }
 .page3central {
@@ -374,21 +374,21 @@ div.page1box:hover div.page2hoverblock {
 }
 
 .block1 {
-  background: url(https://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;  
+  background: url('/content/Vesta on macbook.jpg') center center no-repeat scroll;  
   background-size: cover;
   height: 100%; 
 }
 .block2 {
-  background: url(https://i.imgur.com/e5hof8r.jpg) center center no-repeat scroll;  
+  background: url('/content/shutterstock_303643478.jpg') center center no-repeat scroll;  
   background-size: cover;    
   height: 100%; 
 }
 .block3 {
-  background: url(https://i.imgur.com/4bdi5ZT.jpg) center center no-repeat scroll;  
+  background: url('/content/Joes%20Hardware%20all%20devices.jpg') center center no-repeat scroll;  
   background-size: cover;    
 }
 .block4 {
-  background: url(https://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;  
+  background: url('/content/shutterstock_228783838b.jpg') center center no-repeat scroll;  
   background-size: cover;    
 }
 .vertical-align {
@@ -436,12 +436,9 @@ div.page1box:hover div.page2hoverblock {
 
 }
 
-
 html>body .content {
   height:auto;
 }
-
-
 
 .pagetop {
     #background-color: #222222;
@@ -452,13 +449,10 @@ html>body .content {
     width:100%; height :100%;
 }
 
-
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
 }
-
-
 
 .page2box {
     width: 50%; 
@@ -466,37 +460,13 @@ html>body .content {
     float: left; 
 }
 
-
-
-
 .page2bottom {
     background-color: white;
     height: 500px;    
-}
-
-
-
-.col-md-6#right {
-  background: url(https://i.imgur.com/LQKlLBn.png) center center no-repeat scroll;  
-  background-size: contain;    
-}
-
-.col-md-6#left {
-  background: url(https://i.imgur.com/V5sk0za.png) center center no-repeat scroll;
-  background-size: contain;    
 }
 
 .page1bottom {
     width:100%; 
     height:34%;
     vertical-align: bottom;
-}
-
-
-.content#two {
-  #background: url(https://i.imgur.com/0l81YvP.jpg) center center no-repeat scroll;
-}
-
-.content#four {
-  background: url(https://i.imgur.com/LfUTnF0.jpg) center center no-repeat scroll;
 }
