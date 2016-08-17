@@ -41,16 +41,17 @@ header {
     position: relative;
     display: block;
 }
+.navigator {
+    width: 100vw; 
+    text-align: center; 
+    position: fixed;  
+    bottom: 3%;       
+}
 .btn-circle {
-    width: 100%;
-    height: 100%;    
-    position: absolute;
+    margin: auto;
     display: block;
-    top: 80%;
-    left: 50%;
     width: 70px;
     height: 70px;
-    margin-top: 15px;
     padding: 7px 16px;
     border: 2px solid;
     border-color: gray;
@@ -62,6 +63,9 @@ header {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     z-index: 10;
+}
+.btn-circle:hover {
+    border-color:#eee;
 }
 
 .fa {
@@ -104,7 +108,7 @@ header {
 .page2central {
     width:100%; 
     min-height: 100vh;
-    background: url('/content/Joes Hardware all devices.jpg') no-repeat center;
+    background: url('content/Joes_Hardware_all_devices.jpg') no-repeat center;
     background-size: cover;    
 }
 .page3central {
@@ -225,9 +229,9 @@ header {
     min-height: 100vh;    
 }
 .page4central .video {
-    #text-align: center;
+    /*#text-align: center;
     #position: relative;
-    #top: 50%;
+    #top: 50%;*/
     height: 80%;
     transform: translateY(5%);    
 }
@@ -374,21 +378,21 @@ div.page1box:hover div.page2hoverblock {
 }
 
 .block1 {
-  background: url('/content/Vesta on macbook.jpg') center center no-repeat scroll;  
+  background: url('content/Vesta on macbook.jpg') center center no-repeat scroll;  
   background-size: cover;
   height: 100%; 
 }
 .block2 {
-  background: url('/content/shutterstock_303643478.jpg') center center no-repeat scroll;  
+  background: url('content/shutterstock_303643478.jpg') center center no-repeat scroll;  
   background-size: cover;    
   height: 100%; 
 }
 .block3 {
-  background: url('/content/Joes%20Hardware%20all%20devices.jpg') center center no-repeat scroll;  
+  background: url('content/Joes%20Hardware%20all%20devices.jpg') center center no-repeat scroll;  
   background-size: cover;    
 }
 .block4 {
-  background: url('/content/shutterstock_228783838b.jpg') center center no-repeat scroll;  
+  background: url('content/shutterstock_228783838b.jpg') center center no-repeat scroll;  
   background-size: cover;    
 }
 .vertical-align {
@@ -430,10 +434,17 @@ div.page1box:hover div.page2hoverblock {
 
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-nav li a {
+        font-size: 14px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .navbar-nav li a {
+        font-size: 15px;
+    }
 }
 
 html>body .content {
