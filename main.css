@@ -34,7 +34,46 @@ header {
     border: 0px;
     height: 160px;
     padding-top: 53px;
+    width: 100%;
 }
+
+.row {
+    position: relative;
+    display: block;
+}
+.btn-circle {
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    display: block;
+    top: 80%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid;
+    border-color: gray;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    z-index: 10;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    color: gray;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .navbar-nav li a {
     display: block;
     color: #fff;
@@ -59,13 +98,13 @@ header {
 .page1central {
     width:100%; 
     min-height: calc(100vh - 160px);
-    background: url(https://i.imgur.com/rNfd2Wd.jpg) no-repeat center fixed;
+    background: url(https://i.imgur.com/rNfd2Wd.jpg) no-repeat center;
     background-size: cover;
 }
 .page2central {
     width:100%; 
     min-height: 100vh;
-    background: url(https://i.imgur.com/4bdi5ZT.jpg) no-repeat center fixed;
+    background: url(https://i.imgur.com/4bdi5ZT.jpg) no-repeat center;
     background-size: cover;    
 }
 .page3central {
@@ -186,10 +225,11 @@ header {
     min-height: 100vh;    
 }
 .page4central .video {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);    
+    #text-align: center;
+    #position: relative;
+    #top: 50%;
+    height: 80%;
+    transform: translateY(5%);    
 }
 .page5centraltext {
     position: relative;
