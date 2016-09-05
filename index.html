@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Vesta timber &amp; hardware</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="https://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.css"/>
+    <script src="js/smoothSlider.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">     
@@ -18,7 +19,7 @@
     <div class="container">  
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-9">
-                <a href="#"><img id='brand' class="img-responsive" src='content/VTH_HR_MD_White.png' /></a>
+                <a href="index.html"><img id='brand' class="img-responsive" src='content/VTH_HR_MD_White.png' /></a>
             </div>
             <div class="col-md-9 col-sm-9 col-xs-3">
                 <nav class="navbar">
@@ -34,11 +35,11 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#" class="active">VESTA STORE<span class="sr-only">(current)</span></a></li>
-                            <li><a href="/trade.html">VESTA TRADE</a></li>
-                            <li><a href="/custom.html">CUSTOM WEBSITES</a></li>
-                            <li><a href="#">POS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="index.html#vesta-store">VESTA STORE</a></li>
+                            <li><a href="trade.html">VESTA TRADE</a></li>
+                            <li><a href="custom.html">CUSTOM WEBSITES</a></li>
+                            <li><a href="custom.html#sales-assist">POS</a></li>
+                            <li><a href="index.html#contact-us">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,38 +60,38 @@
     </div>    
 </div>
 
-
+<a name="vesta-store"></a>
 <div class="container page2central">  
     <div class="row">
       <div class="col-md-3 page1box block1 nopadding nomargin">
         <div class="page2hoverblock">
             <div class="vertical-align">
                 <div class="textabovebutton">VESTA STORE</div>
-                <a class="button" href="#">View website</a>
+                <a class="button" href="index.html#vesta-store">View website</a>
             </div>
         </div>
       </div>
       <div class="col-md-3 page1box block2 nopadding nomargin">
         <div class="page2hoverblock">
             <div class="vertical-align">
-                <div class="textabovebutton">VESTA STORE</div>
-                <a class="button" href="#">View website</a>
+                <div class="textabovebutton">VESTA TRADE</div>
+                <a class="button" href="trade.html">View website</a>
             </div>
         </div>
       </div>
       <div class="col-md-3 page1box block3 nopadding nomargin">
         <div class="page2hoverblock">
             <div class="vertical-align">
-                <div class="textabovebutton">VESTA STORE</div>
-                <a class="button" href="#">View website</a>
+                <div class="textabovebutton">CUSTOM WEBSITES</div>
+                <a class="button" href="custom.html">View website</a>
             </div>
         </div>
       </div>
       <div class="col-md-3 page1box block4 nopadding nomargin">
         <div class="page2hoverblock">
             <div class="vertical-align">
-                <div class="textabovebutton">VESTA STORE</div>
-                <a class="button" href="#">View website</a>
+                <div class="textabovebutton">SALES ASSIST</div>
+                <a class="button" href="custom.html#sales-assist">View website</a>
             </div>
         </div>
       </div>            
@@ -167,7 +168,7 @@
                 <p>Basic Store Design</p>
                 <p>Up to 10 Vesta Central Suppliers</p>
                 <p>Up to $50k of online sales</p>
-                <a href="#" class="button2">More Info</a>
+                <a href="#" class="button2" data-toggle="modal" data-target="#myModal">More Info</a>
             </div>
         </div>
        <div class="col-md-6 nopadding page6centraltextblock"> 
@@ -180,18 +181,18 @@
 
 <div class="container page7central">  
     <div class="row">        
-       <div class="col-md-5 col-md-offset-1 nopadding page7centraltextblock">
+       <div class="col-md-6 col-md-offset-1 nopadding page7centraltextblock">
             <div class="imgblock">
                 <img src="images/comp2.png" alt="" class="img-responsive">
             </div>           
         </div>
-       <div class="col-md-6 nopadding page7centraltextblock"> 
+       <div class="col-md-5 nopadding page7centraltextblock"> 
             <div class="page7centraltext">
                 <h3>STARTER</h3>
                 <p>Basic Store Design</p>
                 <p>Up to 10 Vesta Central Suppliers</p>
                 <p>Up to $50k of online sales</p>
-                <a href="#" class="button3">More Info</a>
+                <a href="#" class="button3" data-toggle="modal" data-target="#myModal">More Info</a>
             </div>
        </div>                    
     </div>       
@@ -205,7 +206,7 @@
                 <p>Basic Store Design</p>
                 <p>Up to 10 Vesta Central Suppliers</p>
                 <p>Up to $50k of online sales</p>
-                <a href="#" class="button2">More Info</a>
+                <a href="#" class="button2" data-toggle="modal" data-target="#myModal">More Info</a>
             </div>
         </div>
        <div class="col-md-6 nopadding page8centraltextblock"> 
@@ -228,7 +229,7 @@
                 <div class="work-overlay">
                     <h2>Banner Mitre 10</h2>
                     <p>Evelent rerferiae nossimo luptamus doluptaerum verepelic te volupti od qui omnit, ne voluptatque est et, qui dunt</p>
-                    <a href="#" class="button-outline">View Website</a>
+                    <a href="http://shop.bannermitre10.com.au/" target="_blank" class="button-outline">View Website</a>
                 </div>
             </div>
         </div>
@@ -238,7 +239,7 @@
                 <div class="work-overlay">
                     <h2>Banner Mitre 10</h2>
                     <p>Evelent rerferiae nossimo luptamus doluptaerum verepelic te volupti od qui omnit, ne voluptatque est et, qui dunt</p>
-                    <a href="#" class="button-outline">View Website</a>
+                    <a href="http://hhardwareorange.com.au/" target="_blank" class="button-outline">View Website</a>
                 </div>
             </div>
         </div>
@@ -248,7 +249,7 @@
                 <div class="work-overlay">
                     <h2>Banner Mitre 10</h2>
                     <p>Evelent rerferiae nossimo luptamus doluptaerum verepelic te volupti od qui omnit, ne voluptatque est et, qui dunt</p>
-                    <a href="#" class="button-outline">View Website</a>
+                    <a href="http://www.kempscreekmitre10.com.au/" target="_blank" class="button-outline">View Website</a>
                 </div>
             </div>
         </div>
@@ -258,7 +259,7 @@
                 <div class="work-overlay">
                     <h2>Banner Mitre 10</h2>
                     <p>Evelent rerferiae nossimo luptamus doluptaerum verepelic te volupti od qui omnit, ne voluptatque est et, qui dunt</p>
-                    <a href="#" class="button-outline">View Website</a>
+                    <a href="http://shop.rmtimber.com.au/" target="_blank" class="button-outline">View Website</a>
                 </div>
             </div>
         </div>
@@ -266,7 +267,7 @@
     </div>       
 </div>
 
-
+<a name="contact-us"></a>
 <div class="container page10central">
     <div class="row">
         <div class="col-md-12 page10centraltitle">
@@ -308,11 +309,33 @@
 
 
 
-<!--<div class="navigator">
+<div class="navigator">
     <div class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </div>
-</div>-->
+</div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>

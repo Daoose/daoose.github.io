@@ -1,12 +1,47 @@
 $(document).ready(function(){
-    //ResizePage();
-    // $(".content#one").click(function() {
-    //     $('html, body').animate({scrollTop: $(".content#two").offset().top}, 1000);
-    // });
-    // $(".page1box#one").click(function() {
-    //     $('html, body').animate({scrollTop: $(".content#three").offset().top}, 1000);
-    // }); 
-    var $dom = $('body');
+
+    // browser detection
+    var matched, browser;
+
+    jQuery.uaMatch = function( ua ) {
+        ua = ua.toLowerCase();
+
+        var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+            /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+            /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+            /(msie) ([\w.]+)/.exec( ua ) ||
+            ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+            [];
+
+        return {
+            browser: match[ 1 ] || "",
+            version: match[ 2 ] || "0"
+        };
+    };
+
+    matched = jQuery.uaMatch( navigator.userAgent );
+    browser = {};
+
+    if ( matched.browser ) {
+        browser[ matched.browser ] = true;
+        browser.version = matched.version;
+    }
+
+    // Chrome is Webkit, but Webkit is also Safari.
+    if ( browser.chrome ) {
+        browser.webkit = true;
+    } else if ( browser.webkit ) {
+        browser.safari = true;
+    }
+
+    jQuery.browser = browser;
+
+ 
+    if ($.browser.mozilla) {
+        var $dom = $('html'); 
+    } else {
+        var $dom = $('body');
+    }
     var $frame = $("iframe");
     var scroll = this.scrollTop;      
 
@@ -17,8 +52,13 @@ $(document).ready(function(){
         var wh = $(window).height(); 
         var scroll = this.scrollTop + ( delta < 0 ? 1 : -1 ) * wh;
         scroll = Math.round(scroll/wh) * wh;
-        $dom.stop().animate({ scrollTop: scroll }, 800);
-        console.log(scroll);
+        $dom.stop().animate({ scrollTop: scroll }, 800, function() {
+            if (wh + this.scrollTop == $(document).height()) {
+                $(".navigator").hide();
+            } else {
+                $(".navigator").show();
+            } 
+        });
         e.preventDefault();
     });
 
@@ -27,9 +67,14 @@ $(document).ready(function(){
         if (e.which == 38 || e.which == 33) {
             var wh = $(window).height(); 
             var scroll = $(window).scrollTop() - wh;
-            console.log(scroll);
             scroll = Math.round(scroll/wh) * wh;
-            $dom.stop().animate({ scrollTop: scroll }, 800);
+            $dom.stop().animate({ scrollTop: scroll }, 800, function() {
+                if (wh + this.scrollTop == $(document).height()) {
+                    $(".navigator").hide();
+                } else {
+                    $(".navigator").show();
+                } 
+            });
             e.preventDefault();
         }
         // down
@@ -37,21 +82,30 @@ $(document).ready(function(){
             var wh = $(window).height(); 
             var scroll = $(window).scrollTop() + wh;
             scroll = Math.round(scroll/wh) * wh;
-            $dom.stop().animate({ scrollTop: scroll }, 800);
+            $dom.stop().animate({ scrollTop: scroll }, 800, function() {
+                if (wh + this.scrollTop == $(document).height()) {
+                    $(".navigator").hide();
+                } else {
+                    $(".navigator").show();
+                } 
+            });
             e.preventDefault();
         }        
-});
+    });
+    $(".navigator").bind( 'click', function ( e ) {
+        var wh = $(window).height(); 
+        var scroll = $(window).scrollTop() + wh;
+        scroll = Math.round(scroll/wh) * wh;
+            $dom.stop().animate({ scrollTop: scroll }, 800, function() {
+
+                if (wh + $(window).scrollTop() == $(document).height()) {
+                    $(".navigator").hide();
+                } else {
+                    $(".navigator").show();
+                } 
+        });
+    });
     
+
 });
 
-//function ResizePage() {
-    //$('.page1box').css("height",$('.page1box').width());
-    //$('.page1central').css("height",$(window).height()-$('.page1box').width()-$('.page1top').height());
-    //$('.page2central').css("height",$(window).height()/2);
-    //$('.page2bottom').css("height",$(window).height()/2);    
-//}
-    
-
-//$(window).on('resize', function(){
-//    ResizePage();
-//});
