@@ -465,7 +465,7 @@ header {
     text-align: center;
     font-size: 31px;
     font-family: 'Avenir-Black'; 
-    height: 14vh;
+    height: 15vh;
 }
 .page9centraltitle h2 {
     color: #000;
@@ -526,7 +526,7 @@ header {
 }
 .work-overlay h2 {
     color: #fff;
-    padding-top: 6%;
+    padding-top: 55%;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -558,8 +558,8 @@ header {
     text-decoration: none;
 }
 .work-wrapper {
-    min-height: 43vh;
-    height:43vh; 
+    min-height: 85vh;
+    height:85vh; 
 }
 .bg-image-1 {
     background: url('images/13.jpg') center center no-repeat scroll;  
