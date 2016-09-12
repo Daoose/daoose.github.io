@@ -112,7 +112,7 @@ $(document).ready(function(){
             $('<img/>')[0].src = this;
         });
     }
-    $(['images/header-bg-2.jpg','images/header-bg-3.jpg']).preload();
+    $(['images/header-bg-2.jpg','images/header-bg-3.jpg', 'images/block3-bg-2.png', 'images/block3-bg-3.jpg', 'icons1-hover.png', 'icons2-hover.png', 'icons3-hover.png', 'icons4-hover.png']).preload();
 
     /* header background images slide */
     var bgHeadSlider = 1;

@@ -155,6 +155,13 @@ header {
     width:100%; 
     min-height: 100vh;
 }
+.page3central-image1 {
+    float: right;
+}
+.page3central-image2 {
+    margin-left: 200px;
+    margin-top: -100px;
+}
 .height100vh {
     height: 100vh;
     min-height: 100vh;    
@@ -200,35 +207,42 @@ header {
     font-size: 25px;
 }
 .ultextblock div {
-    height: 100px;
+    padding-bottom: 15px;
 }
 .ultextblock div:after {
     content: '';
     display: block;
     clear: both;
 }
+.ultextblock h2 {
+    color: #003d6a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .ultextblock > div > p{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 100px;
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 20px;  
+    font-weight: 400; 
 }
 .ultextblock1:before{
     content: url(images/section3-icon1.png);
     float: left;
     margin-right: 38px;
-    padding-top: 12px;
+    padding-top: 5px;
 }
 .ultextblock2:before{
     content: url(images/section3-icon2.png);
     float: left;
     margin-right: 38px; 
-    padding-top: 24px;       
+    padding-top: 8px;       
 }
 .ultextblock3:before{
     content: url(images/section3-icon3.png);
     float: left;
     margin-right: 38px;
-    padding-top: 16px;       
+    padding-top: 6px;       
 }
 .ultextblock4:before{
     content: url(images/section3-icon4.png);
