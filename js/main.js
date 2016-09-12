@@ -106,6 +106,37 @@ $(document).ready(function(){
         });
     });
     
+    /* image preload */
+    $.fn.preload = function() {
+        this.each(function(){
+            $('<img/>')[0].src = this;
+        });
+    }
+    $(['images/header-bg-2.jpg','images/header-bg-3.jpg']).preload();
+
+    /* header background images slide */
+    var bgHeadSlider = 1;
+    var sliderDiv = $('.page1central');
+    var slider2Div = $('.page2central');
+    setInterval(function(){
+        switch(bgHeadSlider) {
+            case 1:
+                sliderDiv.css('background-image', 'url("images/header-bg-2.jpg")');
+                slider2Div.css('background-image', 'url("images/block3-bg-2.png")');
+                break;
+            case 2:
+                sliderDiv.css('background-image', 'url("images/header-bg-3.jpg")');
+                slider2Div.css('background-image', 'url("images/block3-bg-3.jpg")');
+                break;
+            case 3:
+                sliderDiv.css('background-image', 'url("images/header-bg-1.jpg")');
+                slider2Div.css('background-image', 'url("images/Joes_Hardware_all_devices.jpg")');
+                bgHeadSlider = 1;
+                break;
+        }        
+        bgHeadSlider++;
+    }, 5000);
+
 
 });
 

@@ -108,9 +108,14 @@ header {
 }
 .page1central {
     width:100%; 
-    min-height: calc(100vh - 160px);
-    background: url('content/hbg.jpg') no-repeat center;
+    min-height: calc(100vh - 160px);      
+    /*background: url('images/header-bg-1.jpg') no-repeat center center fixed;*/
+    background: url('images/header-bg-1.jpg') no-repeat center;    
     background-size: cover;
+    -webkit-transition: background 500ms ease-in 400ms; /* property duration timing-function delay */
+    -moz-transition: background 500ms ease-in 400ms;
+    -o-transition: background 500ms ease-in 400ms;
+    transition: background 500ms ease-in 400ms;    
 }
  .custom1central {
     width:100%; 
@@ -128,7 +133,11 @@ header {
     width:100%; 
     min-height: 100vh;
     background: url('images/Joes_Hardware_all_devices.jpg') no-repeat center;
-    background-size: cover;    
+    background-size: cover;  
+    -webkit-transition: background 500ms ease-in 400ms; /* property duration timing-function delay */
+    -moz-transition: background 500ms ease-in 400ms;
+    -o-transition: background 500ms ease-in 400ms;
+    transition: background 500ms ease-in 400ms;        
 }
 .custom5central {
     width:100%; 
@@ -456,7 +465,7 @@ header {
     text-align: center;
     font-size: 31px;
     font-family: 'Avenir-Black'; 
-    height: 15vh;
+    height: 14vh;
 }
 .page9centraltitle h2 {
     color: #000;
@@ -517,7 +526,7 @@ header {
 }
 .work-overlay h2 {
     color: #fff;
-    padding-top: 55%;
+    padding-top: 6%;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -549,8 +558,8 @@ header {
     text-decoration: none;
 }
 .work-wrapper {
-    min-height: 85vh;
-    height:85vh; 
+    min-height: 43vh;
+    height:43vh; 
 }
 .bg-image-1 {
     background: url('images/13.jpg') center center no-repeat scroll;  
@@ -684,7 +693,7 @@ header {
     font-size: 20px;      
 }
 div.page2hoverblock {
-    background-color: rgba(0,0,255,0.25);   
+    background-color: rgba(0,0,255,0.4);   
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.2s linear;
